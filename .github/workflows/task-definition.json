@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:951290081390:task-definition/test-github:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:951290081390:task-definition/test-github:10",
     "containerDefinitions": [
         {
             "name": "test-github",
-            "image": "951290081390.dkr.ecr.us-east-1.amazonaws.com/test-github",
+            "image": "951290081390.dkr.ecr.us-east-1.amazonaws.com/test-github:6110d25a823cb802b68719b36c4e7cf3e5f924f2",
             "cpu": 0,
             "portMappings": [
                 {
@@ -13,8 +13,6 @@
                 }
             ],
             "essential": true,
-            "entryPoint": [],
-            "command": [],
             "environment": [],
             "mountPoints": [],
             "volumesFrom": [],
@@ -32,7 +30,7 @@
     "taskRoleArn": "arn:aws:iam::951290081390:role/ECS_TASK_ROLE",
     "executionRoleArn": "arn:aws:iam::951290081390:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 10,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -74,6 +72,6 @@
     ],
     "cpu": "256",
     "memory": "512",
-    "registeredAt": "2022-12-06T15:11:08.694000+02:00",
-    "registeredBy": "arn:aws:iam::951290081390:root"
+    "registeredAt": "2022-12-06T19:14:41.077000+02:00",
+    "registeredBy": "arn:aws:sts::951290081390:assumed-role/github/github"
 }
